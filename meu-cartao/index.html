@@ -1,0 +1,35 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão apresentação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <button id="trocar-tema">tema</button>
+     <script>
+        const trocarTema = document.getElementById("trocar-tema")
+        const body = document.body
+
+        trocarTema.addEventListener("click", () => {
+            body.classList.toggle("modo-escuro")
+        })
+    </script>
+    <div class="container">
+    <div class="card">
+        <img src="images.jpg" alt="foto profissional" class="avatar">
+        <h1>Luis Henrique</h1>
+        <p class="cargo">Desenvolvedor Front-end</p>
+    </div>
+            
+        <div class="bio">
+            <p>Olá! Sou um desenvolvedor web apaixonado por criar experiências digitais incríveis.</p>            
+        </div>
+    <ul class="links">
+         <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+        <li><a href="https://linkedin.com/" target="_blank">LinkedIn</a></li>
+         <li><a href="mailto:luis.henrique@email.com">E-mail</a></li>
+    </ul>
+    </div>   
+</body>
+</html>
